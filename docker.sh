@@ -1,6 +1,7 @@
 #!/usr/bin/bash
 
 # docker installation
+apt update
 apt remove -y docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc
 apt install ca-certificates curl gnupg -y
 install -m 0755 -d /etc/apt/keyrings
